@@ -13,4 +13,4 @@ jobs:
       - name: Setup and Test
         uses: nanjansudhakar/github_actions_library/.github/actions/environment_setup@main
         with:
-          node-version: '20'
+          node-version: '16'
