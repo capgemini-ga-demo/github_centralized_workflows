@@ -1,5 +1,5 @@
 # action.yml in .github/actions/environment_setup
-name: Environment_Setup
+name: Environment_Setup .github
 description: "Setup Node.js and install dependencies"
 inputs:
   node-version:
@@ -9,13 +9,13 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Checkout code
+    - name: checkout-code
       uses: actions/checkout@v3
 
-    - name: Set up Node.js
+    - name: set-up---Node.js
       uses: actions/setup-node@v3
       with:
         node-version: ${{ inputs.node-version }}
 
-    - name: Install dependencies
+    - name: install-dependencies
       run: npm install
