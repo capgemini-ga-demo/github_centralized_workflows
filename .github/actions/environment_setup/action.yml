@@ -9,13 +9,13 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: checkout-code
+    - name: checkout-code via ACTIONs
       uses: actions/checkout@v3
 
-    - name: set-up---Node.js
+    - name: set-up---Node.js via ACTIONs
       uses: actions/setup-node@v3
       with:
         node-version: ${{ inputs.node-version }}
 
-    - name: install-dependencies
+    - name: install-dependencies via ACTIONs
       run: npm install

@@ -1,5 +1,5 @@
 # main_wf.yml in the workflows for testing 
-name: Main Pipeline
+name: WF Test Pipe
 
 on:
   push:
@@ -10,4 +10,4 @@ jobs:
   call_reusable_workflow:
     uses: nanjansudhakar/github_actions_library/.github/workflows/reusable-workflow.yml@main
     with:
-      environment: development
+      environment: QA 
