@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup and Test
-        uses: nanjansudhakar/github_actions_library/.github/actions/environment_setup@main
+        uses: nanjansudhakar/github_actions_library/actions/environment_setup@main
         with:
           node-version: '16'
