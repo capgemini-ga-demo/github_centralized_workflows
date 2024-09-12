@@ -8,6 +8,6 @@ on:
 
 jobs:
   call_reusable_workflow:
-    uses: ./nanjansudhakar/github_actions_library/tree/main/.github/workflows/reusable-workflow.yml@main
+    uses: nanjansudhakar/github_actions_library/.github/workflows/reusable-workflow.yml@main
     with:
       environment: development
