@@ -1,4 +1,4 @@
-# main.yml in another repository
+# main_wf.yml in the workflows for testing 
 name: Main Pipeline
 
 on:
