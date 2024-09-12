@@ -1,0 +1,21 @@
+# action.yml in actions/environment_setup
+name: action: Environment_Setup
+description: "Setup Node.js and install dependencies"
+inputs:
+  node-version:
+    description: "Node.js version"
+    default: "21"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.node-version }}
+
+    - name: Install dependencies
+      run: npm install
