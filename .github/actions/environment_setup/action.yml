@@ -1,4 +1,4 @@
-# action.yml in .github/actions/setup_environment
+# action.yml in .github/actions/environment_setup
 name: Environment_Setup
 description: "Setup Node.js and install dependencies"
 inputs:
