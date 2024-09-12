@@ -1,0 +1,13 @@
+# main.yml in another repository
+name: Main Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call_reusable_workflow:
+    uses: nanjansudhakar/github_actions_library/tree/main/.github/workflows/reusable-workflow.yml@main
+    with:
+      environment: development
