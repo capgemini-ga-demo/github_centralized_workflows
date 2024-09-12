@@ -1,5 +1,5 @@
 # action.yml in actions/environment_setup
-name: action: Environment_Setup
+name: action_Environment_Setup
 description: "Setup Node.js and install dependencies"
 inputs:
   node-version:
