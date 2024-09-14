@@ -1,0 +1,15 @@
+name: Checkmarx Security Scan
+description: Perform a Checkmarx security scan.
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkmarx Security Scan
+      env:
+        CHECKMARX_API_KEY: ${{ secrets.CHECKMARX_API_KEY }}
+        CHECKMARX_PROJECT_NAME: 'YourProjectName'
+      run: |
+        curl -X POST "https://checkmarx-api-url/api/scans" \
+             -H "Authorization: Bearer $CHECKMARX_API_KEY" \
+             -H "Content-Type: application/json" \
+             -d '{"projectName": "$CHECKMARX_PROJECT_NAME", "sourceLocation": "./"}'
