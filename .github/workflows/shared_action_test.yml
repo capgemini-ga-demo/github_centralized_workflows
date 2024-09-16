@@ -24,9 +24,9 @@ jobs:
           java-version: '11'
           distribution: 'adopt'  # or 'temurin', 'zulu', or another distribution you are using
 
-      # # Step 3: Build the application with Maven using shared action
-      # - name: Build with Maven shared_action_test
-      #   uses: nanjansudhakar/github_actions_library/.github/actions/build_maven@main
+      # Step 3: Build the application with Maven using shared action
+      - name: Build with Maven shared_action_test
+        uses: nanjansudhakar/github_actions_library/.github/actions/build_maven@main
 
       # # Step 4: SonarQube scan using shared action
       # - name: SonarQube Scan shared_action_test
