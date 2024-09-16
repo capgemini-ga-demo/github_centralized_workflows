@@ -4,7 +4,7 @@ description: Set up Java Development Kit (JDK) for building Java projects.
 inputs:
   java-version:
     description: 'Version of JDK to set up'
-    required: true
+    required: false
     default: '11'
 
 runs:
