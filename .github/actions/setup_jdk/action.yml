@@ -6,6 +6,10 @@ inputs:
     description: 'Version of JDK to set up'
     required: false
     default: '11'
+  distribution:
+    description: 'distribution set up'
+    required: false
+    default: 'adopt'   # Set the distribution you want, e.g., 'adopt', 'temurin', etc.
 
 runs:
   using: "composite"
@@ -14,3 +18,4 @@ runs:
       uses: actions/setup-java@v3
       with:
         java-version: ${{ inputs.java-version }}
+        distribution: ${{ inputs.distribution }}
