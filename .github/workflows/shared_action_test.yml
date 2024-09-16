@@ -23,18 +23,18 @@ jobs:
         with:
           java-version: '11'
 
-      # Step 3: Build the application with Maven using shared action
-      - name: Build with Maven shared_action_test
-        uses: nanjansudhakar/github_actions_library/.github/actions/build_maven@main
+      # # Step 3: Build the application with Maven using shared action
+      # - name: Build with Maven shared_action_test
+      #   uses: nanjansudhakar/github_actions_library/.github/actions/build_maven@main
 
-      # Step 4: SonarQube scan using shared action
-      - name: SonarQube Scan shared_action_test
-        uses: nanjansudhakar/github_actions_library/.github/actions/scan_sonarqube@main
+      # # Step 4: SonarQube scan using shared action
+      # - name: SonarQube Scan shared_action_test
+      #   uses: nanjansudhakar/github_actions_library/.github/actions/scan_sonarqube@main
 
-      # Step 5: Checkmarx Security Scanning using shared action
-      - name: Checkmarx Security Scan shared_action_test
-        uses: nanjansudhakar/github_actions_library/.github/actions/scan_checkmarx@main
+      # # Step 5: Checkmarx Security Scanning using shared action
+      # - name: Checkmarx Security Scan shared_action_test
+      #   uses: nanjansudhakar/github_actions_library/.github/actions/scan_checkmarx@main
 
-      # Step 6: Publish to Artifactory using shared action
-      - name: Publish to Artifactory shared_action_test
-        uses: nanjansudhakar/github_actions_library/.github/actions/publish_artifactory@main
+      # # Step 6: Publish to Artifactory using shared action
+      # - name: Publish to Artifactory shared_action_test
+      #   uses: nanjansudhakar/github_actions_library/.github/actions/publish_artifactory@main

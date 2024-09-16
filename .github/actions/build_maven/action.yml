@@ -1,5 +1,5 @@
 name: Build with Maven
-description: Build the Java application using Maven.
+description: Build the Java application using Maven
 
 runs:
   using: "composite"
