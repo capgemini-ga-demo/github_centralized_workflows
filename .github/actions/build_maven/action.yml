@@ -1,9 +1,0 @@
-name: Build with Maven
-description: Build the Java application using Maven
-
-runs:
-  using: "composite"
-  steps:
-    - name: Build with Maven
-      run: mvn clean install
-      shell: bash  # Specify shell type
